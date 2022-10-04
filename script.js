@@ -17,6 +17,7 @@ function switchpage(element){
     for(let i = 0; i< pages.length; i++){
         if (pages[i].id === id){
             pages[i].style.display = "block";
+    
         }else{
             pages[i].style.display = "none";
         } 
@@ -24,23 +25,26 @@ function switchpage(element){
     }
 }           
 
+
 homebtn.addEventListener("click", switchpage)
 projectsbtn.addEventListener("click", switchpage)
 contactbtn.addEventListener("click", switchpage)
 
+
 function growcard(element){
-    
-    console.log(element.target)
-    let target = element.target;
-    target.style.position = "absolute"
-    for(let i =0; i<10 ; i++){
-        console.log((target.offsetWidth + 5).toString())
-        target.style.width =  (target.offsetWidth + 5).toString() + 'px'
-        target.style.height =  (target.offsetHeight + 5).toString() + 'px'
+    witdh = 441;
+    height = 82    
+    id = window.setInterval(function(){
+        if(width >= 1200){
+            window.clearInterval(id)
         
-        
-        
+        }
+        else{
+            witdh++;
+            height++;
+            target.style.width = witdh + "px";
+            target.style.height = height + "px"
+        }
     }
 }
-
 

@@ -19,8 +19,8 @@ body{
 }
 
 .nav{
-    position: fixed;
-    left: 90%;
+    position: sticky;
+    margin-left: 90%
 
 
 }
