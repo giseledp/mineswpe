@@ -32,8 +32,8 @@ contactbtn.addEventListener("click", switchpage)
 
 
 function growcard(element){
-    witdh = 441;
-    height = 82    
+    let witdh = 441;
+    let height = 82    
     id = window.setInterval(function(){
         if(width >= 1200){
             window.clearInterval(id)
@@ -45,6 +45,6 @@ function growcard(element){
             target.style.width = witdh + "px";
             target.style.height = height + "px"
         }
-    }
+    })
 }
 

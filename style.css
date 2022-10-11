@@ -18,6 +18,12 @@ body{
     width: 10rem;height: 10rem;
 }
 
+.discord{
+    border:rgb(15, 114, 1);
+    border-radius: 5rem;
+    width: 10rem;height: 10rem
+}
+
 .nav{
     position: sticky;
     margin-left: 90%
