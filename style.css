@@ -1,6 +1,6 @@
-body{
-    background-color: rgb(32, 47, 178);
-}
+/* body{
+    background-color: rgba(32, 47, 178, 0.425);
+} */
 
 
 .header{
@@ -14,7 +14,7 @@ body{
 
 .logo{
     border: solid;
-    border-radius: 5rem;
+    border-radius: 2rem;
     width: 10rem;height: 10rem;
 }
 
@@ -31,6 +31,6 @@ body{
 
 }
 
-.content{
+/* .content{
     width: 5rem; height: 5rem;
-}
+} */

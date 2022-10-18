@@ -4,9 +4,9 @@ const contactbtn = document.getElementById("contactsbtn");
 const body = document.getElementById("body");
 const content = document.querySelectorAll('.card')
 
-content.forEach(element => {
-    element.addEventListener('click', growcard)
-});
+// content.forEach(element => {
+//     element.addEventListener('click', growcard)
+// });
 
 function switchpage(element){
     let id = element.target.value
