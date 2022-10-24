@@ -4,6 +4,7 @@ const bot = document.getElementById("bot")
 const result = document.getElementById("result")
 
 const rps = ["rock", "paper", "scissors"]
+
 function rps_picker(){
     let choice = rps[Math.floor(Math.random() * 3)]
     bot.innerHTML = "bot: " + choice;
