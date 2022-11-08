@@ -9,10 +9,11 @@ const content = document.querySelectorAll('.card')
 // });
 
 function switchpage(element){
+    // try{
     let id = element.target.value
     console.log(element.target)
     let pages = body.children;
-    console.log(pages)
+    console.error(pages)
 
     for(let i = 0; i< pages.length; i++){
         if (pages[i].id === id){
@@ -23,6 +24,9 @@ function switchpage(element){
         } 
         
     }
+    // }catch(err){
+    //     console.error(err.toString());
+    // }
 }           
 
 

@@ -2,6 +2,20 @@
     background-color: rgba(32, 47, 178, 0.425);
 } */
 
+/*.center{
+    text-align: center;
+}*/
+
+/*.border{
+    border: black;
+    border-radius: 10;
+    width: 10rem; height: 10rem;
+}*/
+
+.container{
+    fill: rgb(0, 0, 43);
+    
+}
 
 .header{
     display: inline-block;

@@ -14,7 +14,7 @@ class Box {
         this.height = 10
     }
 
-    draw = function (){
+    draw(){
         ctx.rect(this.x, this.y, this.width, this.height)
         ctx.fillStyle = "#0085DE"
         ctx.fill()
@@ -22,6 +22,8 @@ class Box {
 }
 
 let box1 = new Box();
+// let triangle1 = new Triangle();
+
 function a_function(){
     ctx.clearRect(0,0,canvas.width,canvas.height)
     ctx.beginPath()
@@ -35,7 +37,7 @@ function a_function(){
     ctx.closePath()
     box1.x += dx
     box1.y += dy
-    console.log(box1.x)
+    // console.log(box1.x)
     x += dx
     y += dy
 
@@ -53,3 +55,18 @@ function a_function(){
     }
 }
 setInterval(a_function, 20)
+
+// class Triangle {
+//     constructor(){
+//         this.x = 5
+//         this.y = 5
+//         this.width = 6
+//         this.height = 4
+//     }
+
+//     draw = function (){
+//         ctx.rect(this.x, this.y, this.width, this.height)
+//         ctx.fillStyle = "#0085DE"
+//         ctx.fill()
+//     }
+// }
