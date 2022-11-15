@@ -6,6 +6,24 @@ let dx = 3
 let dy = 1
 
 
+class Triangle {
+    constructor(){
+        this.x = 5
+        this.y = 5
+        this.width = 6
+        this.height = 4
+    }
+
+    draw = function (){
+
+        ctx.moveTo(this.x, this.y);
+        ctx.lineTo(this.x+10, this.y+10);
+        ctx.lineTo(this.x+10, this.y);
+        ctx.fill();
+        ctx.fillStyle = "#0085DE"
+    }
+}
+
 class Box {
     constructor(){
         this.x = 10
@@ -22,7 +40,7 @@ class Box {
 }
 
 let box1 = new Box();
-// let triangle1 = new Triangle();
+let triangle1 = new Triangle();
 
 function a_function(){
     ctx.clearRect(0,0,canvas.width,canvas.height)
@@ -30,43 +48,31 @@ function a_function(){
 
 
     box1.draw()
-
+    triangle1.draw()
+    
     // ctx.rect(x,y,10,10)
     // ctx.fillStyle = "#0095DE"
     // ctx.fill()
     ctx.closePath()
     box1.x += dx
     box1.y += dy
+    triangle1.x += dx
+    triangle1.y += dy
     // console.log(box1.x)
     x += dx
     y += dy
 
-    if(x > canvas.width -10){
+    if(triangle1.x > canvas.width - 10 || box1.x > canvas.width){
         dx = -1
     }
-    if(y > canvas.height - 10){
+    if(triangle1.y > canvas.height - 10 || box1.y > canvas.width){
         dy = -1
     }
-    if(x < 0){
+    if(triangle1.x < 0 || box1.x < 0 ){
         dx = 1
     }
-    if(y < 0){
+    if(triangle1.y < 0 || box1.y < 0){
         dy = 1
     }
 }
 setInterval(a_function, 20)
-
-// class Triangle {
-//     constructor(){
-//         this.x = 5
-//         this.y = 5
-//         this.width = 6
-//         this.height = 4
-//     }
-
-//     draw = function (){
-//         ctx.rect(this.x, this.y, this.width, this.height)
-//         ctx.fillStyle = "#0085DE"
-//         ctx.fill()
-//     }
-// }
