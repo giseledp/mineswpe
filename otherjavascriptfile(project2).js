@@ -22,7 +22,7 @@ class Triangle {
         ctx.lineTo(this.x+10, this.y+10);
         ctx.lineTo(this.x+10, this.y);
         ctx.fill();
-        ctx.fillStyle = "#0085DE"
+        ctx.fillStyle = "#0039FB"
     }
 }
 
@@ -31,7 +31,7 @@ class Box {
         this.x = 10
         this.y = 10
         this.dx = 1
-        this.dy = 1
+        this.dy = -1
         this.width = 10
         this.height = 10
     }
@@ -53,8 +53,7 @@ function a_function(){
 
     box1.draw()
     triangle1.draw()
-    console.log(box1.dx , box1.dy)
-    // ctx.rect(x,y,10,10)
+    
     // ctx.fillStyle = "#0095DE"
     // ctx.fill()
     ctx.closePath()

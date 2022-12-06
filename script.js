@@ -3,6 +3,8 @@ const projectsbtn = document.getElementById("projectsbtn");
 const contactbtn = document.getElementById("contactsbtn");
 const body = document.getElementById("body");
 const content = document.querySelectorAll('.card')
+const meme = document.getElementById("ay");
+const bigMan = document.getElementById("AY");
 
 // content.forEach(element => {
 //     element.addEventListener('click', growcard)
@@ -35,6 +37,7 @@ projectsbtn.addEventListener("click", switchpage)
 contactbtn.addEventListener("click", switchpage)
 
 
+
 function growcard(element){
     let witdh = 441;
     let height = 82    
@@ -52,3 +55,16 @@ function growcard(element){
     })
 }
 
+function imgpopup(element){
+    element = document.getElementById(element)
+    console.log(element)
+    element.style.position = "absolute"
+    element.style.width = "100%"
+    element.style.height = "100%"
+    element.style.zIndex = "3"
+}
+
+function dissapear(element){
+    element = document.getElementById(element)
+    element.style.opacity = "0"
+}

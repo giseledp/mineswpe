@@ -12,6 +12,9 @@
     width: 10rem; height: 10rem;
 }*/
 
+.hidden{
+    opacity: 0;
+}
 .container{
     fill: rgb(0, 0, 43);
     

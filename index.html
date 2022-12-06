@@ -10,6 +10,9 @@
 </head>
 
 <body class="bg-primary bg-darken-xl">
+    <img onClick = "dissapear('ay')"style="width: 0;" id = "ay"src="ay.jpg" alt="">
+    <img onClick = "dissapear('kel')" id="kel" style = "width: 0 ;z-index: 3;" src="kel.jpg" alt="image">
+    <img onClick = "dissapear('paper')"style = "width: 0;z-index: 3;" src="fry.jpg"id="paper" alt="">
     <section class = "header container row">
         
         <img class ="logo header col-2" src="logo.png" alt="">
@@ -17,6 +20,7 @@
             <button id = "homebtn" value="home" class="btn btn-info col col-sm">home</button>
             <button id = "projectsbtn"value="projects"class="btn btn-warning col col-sm">projects</button>
             <button id = "contactsbtn"value="contacts"class="btn btn-danger col col-sm">contacts</button>
+            <button onClick = "imgpopup('kel')" id = "Kel" value="kel" class="btn col col-sm hidden">kel</button>
         </nav>
     
     </section>
@@ -31,7 +35,8 @@
             <p class="font-weight-light">Im 11 years old and i like to draw. I play lots of video games and my most played ones is splatoon2 and 3 and The legend of zelda breath of the wild(botw). Ive beaten botw 3+ times already and
                 <br> have 100% all story modes in the splatoon series (off the games i have). I am a beginer cosplayer.
             </p>
-            </section> 
+            <button onClick = "imgpopup('ay')" id = "AY" value="AY" class="btn col col-sm hidden ">AY</button>
+        </section> 
         </section>
 
         <section id = "contacts" class="text-center card">
@@ -40,7 +45,8 @@
              <a class = "text-danger" href="http://discord.com/users/864520196211081276" target="_blank" rel="noopener noreferrer"> Discord: ShadeySquid9 #4657</a>
              <a class = "text-danger" href="http://https://github.com/giseledp" target="_blank" rel="noopener noreferrer" >Github: giseledp</a>
              <img class ="logo discord" src="discord.png" alt="">
-
+             <button onClick = "imgpopup('paper')"  value="paper" class="btn col col-sm hidden ">NO PAPER?</button>
+    
         </section>
         
         <section id = "projects">
@@ -85,7 +91,7 @@
                 </tr>
             </thead> 
             <tbody>
-                <tr class="table-info">
+                <tr class="table-primary">
                     <td>
                         Secrets bellow 
                     </td>
@@ -98,7 +104,7 @@
                         Platformer
                     </td>
                 </tr>
-                <tr class="table-info">
+                <tr class="table-primary">
                     <td>
                         Minesweeper
                     </td>
@@ -111,7 +117,7 @@
                         puzzle game
                     </td>
                 </tr>
-                <tr class="table-info">
+                <tr class="table-primary">
                     <td>
                         Snake(Unfinished)   
                     </td>
@@ -124,7 +130,7 @@
                         Snake
                     </td>
                 </tr>
-                <tr class="table-info">
+                <tr class="table-primary">
                     <td>
                         About me web
                     </td>
@@ -137,8 +143,11 @@
                 </tr>
             </tbody>
         </table>
-        </section>
-    </div>
+    
+    </section>
+    
+</div>
+
 
 
     <script src="script.js"></script>
