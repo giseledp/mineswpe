@@ -5,6 +5,9 @@ const body = document.getElementById("body");
 const content = document.querySelectorAll('.card')
 const meme = document.getElementById("ay");
 const bigMan = document.getElementById("AY");
+const crasH = document.getElementById("crash")
+let tabs = 25
+let apear = document.getElementsByClassName("multiply")
 
 // content.forEach(element => {
 //     element.addEventListener('click', growcard)
@@ -67,4 +70,24 @@ function imgpopup(element){
 function dissapear(element){
     element = document.getElementById(element)
     element.style.opacity = "0"
+}
+
+function crash(){
+    if (tabs === 10){
+        window.open('https://google.com', '_blank')
+
+        clicker()
+    }
+
+}
+
+function clicker(image, num){
+    for (i = 0; i < num; i++){
+        console.log(tabs,i, "before click")
+        window.open(image, '_blank')
+        console.log(tabs,i, "after")
+            
+
+    }
+    
 }
